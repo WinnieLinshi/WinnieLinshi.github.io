@@ -25,15 +25,16 @@ a {
 }
 
 .primary {
-    background-image: linear-gradient(155deg, #FEF9E7 50%, #FADBD8 60%);
+    background-image: linear-gradient(155deg, #FEF9E7 30%, #FADBD8 50%);
+}
+
+.work {
+    background-image: linear-gradient(155deg, #FADBD8 40%, #FEF9E7 60%);
 }
 
 .not-found-primary{
     background-color: #f1ccb8;
 }
-/*footer {*/
-/*    background-image: linear-gradient(155deg, #FEF9E7 50%, #FADBD8 60%);*/
-/*}*/
 
 footer {
     background-color: #FEF9E7;
@@ -60,6 +61,7 @@ footer {
 
 .link-text {
     letter-spacing: 3px;
+    margin-left: 20px;
 }
 
 .link-text:hover {
@@ -68,11 +70,6 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
-    /* header {
-      position: fixed;
-      z-index: 10;
-      width: 100%;
-    } */
     .header-content {
         transition: background-color 0.2s;
     }
@@ -124,23 +121,6 @@ footer {
         font-size: 36px;
         margin-bottom: 50px;
     }
-
-    .header-content_active .wrapper-hamburger {
-        height: 30px;
-        justify-content: center;
-    }
-
-    .header-content_active .cross-button {
-        background-color: white;
-    }
-
-    .header-content_active .cross-button-top {
-        transform: rotate(45deg) translateY(2px);
-    }
-
-    .header-content_active .cross-button-bottom {
-        transform: rotate(-45deg) translateY(-2px);
-    }
 }
 
 /* primary */
@@ -172,6 +152,13 @@ footer {
 .icon {
     width: 30px;
     height: 30px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
 }
 
 .title {
@@ -264,16 +251,16 @@ img:hover {
 
 /* selected works */
 
-.secondary-content {
-    padding-top: 80px;
-    padding-bottom: 80px;
+.detailed-content {
+    padding-top: 40px;
+    padding-bottom: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .wrapper-selected-works {
-    width: 95%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
@@ -282,8 +269,12 @@ img:hover {
     font-size: 80px;
 }
 
+#work{
+    color:#000000;
+}
+
 .work-title {
-    font-size: 24px;
+    font-size: 20px;
     margin-top: 20px;
     margin-bottom: 10px;
 }
@@ -321,7 +312,7 @@ img:hover {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        margin-left: 30px;
+        margin: auto;
     }
 
     .work-title {
@@ -349,9 +340,8 @@ img:hover {
 }
 
 /* about */
-
 .wrapper-about {
-    width: 90%;
+    width: 100%;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
